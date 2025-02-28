@@ -21,26 +21,26 @@ xiaomi_powershare_hal_cc_defaults {
     },
 }
 
-cc_binary {
-    name: "vendor.lineage.powershare@1.0-service.xiaomi",
-    defaults: [
-        "hidl_defaults",
-        "xiaomi_powershare_hal_defaults",
-    ],
-    relative_install_path: "hw",
-    init_rc: ["vendor.lineage.powershare@1.0-service.xiaomi.rc"],
-    vintf_fragments: ["vendor.lineage.powershare@1.0-service.xiaomi.xml"],
-    srcs: [
-        "service.cpp",
-        "PowerShare.cpp",
-    ],
-    shared_libs: [
-        "libbase",
-        "libhardware",
-        "libhidlbase",
-        "liblog",
-        "libutils",
-        "vendor.lineage.powershare@1.0",
-    ],
-    proprietary: true,
-}
+//cc_binary {
+//    name: "vendor.lineage.powershare@1.0-service.xiaomi",
+//    defaults: [
+//        "hidl_defaults",
+//        "xiaomi_powershare_hal_defaults",
+//    ],
+//    relative_install_path: "hw",
+//    init_rc: ["vendor.lineage.powershare@1.0-service.xiaomi.rc"],
+//    vintf_fragments: ["vendor.lineage.powershare@1.0-service.xiaomi.xml"],
+//    srcs: [
+//        "service.cpp",
+//       "PowerShare.cpp",
+//    ],
+//    shared_libs: [
+//        "libbase",
+//        "libhardware",
+//        "libhidlbase",
+//        "liblog",
+//        "libutils",
+//        "vendor.lineage.powershare@1.0",
+//    ],
+//    proprietary: true,
+//}
